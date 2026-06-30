@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BizySkills — Launch Your Tech Career</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== THEME SWITCHER ===== -->
+<div class="theme-switcher">
+  <button class="theme-toggle-btn" onclick="toggleThemePanel()">🎨 Theme</button>
+  <div class="theme-panel" id="themePanel">
+    <button class="theme-btn active" onclick="setTheme('dark','this')" id="btn-dark">🌑 Dark (Default)</button>
+    <button class="theme-btn" onclick="setTheme('light','this')" id="btn-light">☀️ Light</button>
+    <button class="theme-btn" onclick="setTheme('blue','this')" id="btn-blue">🌊 Midnight Blue</button>
+    <button class="theme-btn" onclick="setTheme('forest','this')" id="btn-forest">🌿 Forest</button>
+  </div>
+</div>
+
+<nav>
+  <a href="#" class="logo-wrap">
+    <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="36" height="36" rx="8" fill="#C9A84C" fill-opacity="0.12"/>
+      <rect x="1" y="1" width="34" height="34" rx="7" fill="none" stroke="#C9A84C" stroke-width="1" stroke-opacity="0.4"/>
+      <rect x="7" y="14" width="22" height="14" rx="2.5" fill="none" stroke="#C9A84C" stroke-width="1.8"/>
+      <path d="M13 14v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M20 17l-4 5h3.5l-1.5 5 4-5.5H18.5L20 17z" fill="#C9A84C"/>
+    </svg>
+    <div class="logo-wordmark"><span class="biz">Bizy</span><span class="skills">Skills</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a href="https://wa.me/2348142653495?text=Hi%20BizySkills%2C%20I%20want%20to%20enroll!" class="nav-cta" target="_blank">Enroll Now</a>
+</nav>
+
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-content">
+    <div class="hero-badge">🎓 Next Cohort Starting Soon</div>
+    <h1>Launch Your Career in<br><span class="highlight">Digital Marketing,</span><br>Web Development<br>&amp; Project Management</h1>
+    <p class="hero-sub">Learn practical, job-ready skills through hands-on training, real-world projects, mentorship, and industry-recognized certifications. Join 1,500+ alumni who are building high-income careers in tech and business.</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/2348142653495?text=Hi%20BizySkills%2C%20I%20want%20to%20enroll!" class="btn-primary" target="_blank">Enroll Now →</a>
+      <a href="#courses" class="btn-secondary">View Courses</a>
+    </div>
+    <div class="hero-proof">
+      <div class="proof-item"><span>⭐</span> 1,500+ Students Trained</div>
+      <div class="proof-item"><span>✅</span> 92% Completion Rate</div>
+      <div class="proof-item"><span>🎯</span> Expert Mentors</div>
+      <div class="proof-item"><span>💼</span> Career Support</div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-card-main">
+      <div class="hero-card-title">// Available Programmes</div>
+      <ul class="course-list">
+        <li><span class="course-name"><span class="course-dot" style="background:#C9A84C"></span>Digital Marketing Full Stack</span><span class="course-price">₦180,000</span></li>
+        <li><span class="course-name"><span class="course-dot" style="background:#4C7EC9"></span>Web Development Full Stack</span><span class="course-price">₦200,000</span></li>
+        <li><span class="course-name"><span class="course-dot" style="background:#4CC9B0"></span>Project Management Full Stack</span><span class="course-price">₦200,000</span></li>
+        <li><span class="course-name"><span class="course-dot" style="background:#8B4CC9"></span>CRM &amp; Automation</span><span class="course-price">₦450,000</span></li>
+        <li><span class="course-name"><span class="course-dot" style="background:#C94C7E"></span>Video Content Creation</span><span class="course-price">₦300,000</span></li>
+        <li><span class="course-name"><span class="course-dot" style="background:#C97A4C"></span>Content Management Full Stack</span><span class="course-price">₦300,000</span></li>
+        <li><span class="course-name"><span class="course-dot" style="background:#2ECC71"></span>Java Programming</span><span class="course-price">₦300,000</span></li>
+        <li><span class="course-name"><span class="course-dot" style="background:#3498DB"></span>Python Programming</span><span class="course-price">₦220,000</span></li>
+        <li><span class="course-name"><span class="course-dot" style="background:#E67E22"></span>HTML &amp; CSS</span><span class="course-price">₦180,000</span></li>
+        <li><span class="course-name"><span class="course-dot" style="background:#F1C40F"></span>JavaScript</span><span class="course-price">₦200,000</span></li>
+      </ul>
+    </div>
+    <div class="hero-float-badge"><div class="big">1,500+</div><div class="small">Alumni Placed</div></div>
+  </div>
+</section>
+
+<section id="stats">
+  <div class="stats-grid">
+    <div class="stat-item"><div class="stat-num">1,500+</div><div class="stat-label">Students Trained</div></div>
+    <div class="stat-item"><div class="stat-num">92%</div><div class="stat-label">Course Completion Rate</div></div>
+    <div class="stat-item"><div class="stat-num">10</div><div class="stat-label">Specialist Programmes</div></div>
+    <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">Practical Training</div></div>
+  </div>
+</section>
+
+<section id="courses">
+  <div class="section-eyebrow">Our Programmes</div>
+  <h2 class="section-title">Full Stack Training for <br>Every Career Path</h2>
+  <p class="section-sub">Each programme is built for practical outcomes — live sessions, real projects, and career mentorship included. Enroll instantly via WhatsApp.</p>
+  <div class="courses-grid">
+
+    <!-- Digital Marketing -->
+    <div class="course-card">
+      <span class="course-card-top" style="background:linear-gradient(90deg,#C9A84C,#E8C96A)"></span>
+      <div class="course-card-body">
+        <span class="course-tag" style="background:rgba(201,168,76,0.15);color:#C9A84C;">Full Stack · 3 Months</span>
+        <h3>Digital Marketing Full Stack</h3>
+        <p>Master every pillar of modern digital marketing — from SEO to paid ads, email campaigns, and analytics dashboards.</p>
+        <ul class="course-features">
+          <li>SEO &amp; SEM Strategy</li><li>Social Media Marketing &amp; Management</li><li>Google Ads &amp; Meta Ads</li><li>Email Marketing Automation</li><li>Analytics &amp; Reporting</li><li>Content Strategy &amp; Copywriting</li><li>E-commerce Marketing</li>
+        </ul>
+        <div class="course-footer">
+          <div class="course-price-display"><span class="amount" style="color:#C9A84C">₦180,000</span><div class="duration">3-month programme</div></div>
+          <a href="https://wa.me/2348142653495?text=Hi%2C%20I%20want%20to%20enroll%20in%20Digital%20Marketing%20Full%20Stack" class="course-enroll" style="background:rgba(201,168,76,0.15);color:#C9A84C;" target="_blank">💬 Enroll</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Web Development -->
+    <div class="course-card">
+      <span class="course-card-top" style="background:linear-gradient(90deg,#4C7EC9,#6A9EE8)"></span>
+      <div class="course-card-body">
+        <span class="course-tag" style="background:rgba(76,126,201,0.15);color:#4C7EC9;">Full Stack · 6 Months</span>
+        <h3>Web Development Full Stack</h3>
+        <p>Build modern, responsive web applications from front-end to back-end with industry-standard tools and frameworks.</p>
+        <ul class="course-features">
+          <li>HTML5, CSS3 &amp; Responsive Design</li><li>JavaScript (ES6+) &amp; React</li><li>Node.js &amp; Backend Development</li><li>Database Design (SQL &amp; NoSQL)</li><li>REST APIs &amp; Full Stack Integration</li><li>Git, Version Control &amp; Deployment</li><li>Portfolio Projects &amp; Code Reviews</li>
+        </ul>
+        <div class="course-footer">
+          <div class="course-price-display"><span class="amount" style="color:#4C7EC9">₦200,000</span><div class="duration">6-month programme</div></div>
+          <a href="https://wa.me/2348142653495?text=Hi%2C%20I%20want%20to%20enroll%20in%20Web%20Development%20Full%20Stack" class="course-enroll" style="background:rgba(76,126,201,0.15);color:#4C7EC9;" target="_blank">💬 Enroll</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Management -->
+    <div class="course-card">
+      <span class="course-card-top" style="background:linear-gradient(90deg,#4CC9B0,#6AE8D0)"></span>
+      <div class="course-card-body">
+        <span class="course-tag" style="background:rgba(76,201,176,0.15);color:#4CC9B0;">Full Stack · Flexible</span>
+        <h3>Project Management Full Stack</h3>
+        <p>Become a certified project manager ready to lead cross-functional teams, manage timelines, and deliver results.</p>
+        <ul class="course-features">
+          <li>Agile &amp; Scrum Methodologies</li><li>PMP Exam Preparation</li><li>Risk Management</li><li>Stakeholder Communication</li><li>Jira, Trello &amp; Monday.com</li><li>Budget &amp; Resource Management</li><li>Team Leadership &amp; Delegation</li>
+        </ul>
+        <div class="course-footer">
+          <div class="course-price-display"><span class="amount" style="color:#4CC9B0">₦200,000</span><div class="duration">Flexible duration</div></div>
+          <a href="https://wa.me/2348142653495?text=Hi%2C%20I%20want%20to%20enroll%20in%20Project%20Management" class="course-enroll" style="background:rgba(76,201,176,0.15);color:#4CC9B0;" target="_blank">💬 Enroll</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CRM -->
+    <div class="course-card">
+      <span class="course-card-top" style="background:linear-gradient(90deg,#8B4CC9,#AB6AE8)"></span>
+      <div class="course-card-body">
+        <span class="course-tag" style="background:rgba(139,76,201,0.15);color:#8B4CC9;">Advanced · 6 Months</span>
+        <h3>CRM &amp; Automation</h3>
+        <p>Automate business processes and build powerful CRM systems that drive revenue, retain customers, and scale operations.</p>
+        <ul class="course-features">
+          <li>HubSpot &amp; Salesforce</li><li>Marketing Automation Workflows</li><li>Zapier &amp; Make (Integromat)</li><li>Lead Generation Systems</li><li>Customer Journey Mapping</li><li>CRM Data Analytics &amp; Reporting</li><li>AI-Powered Automation Tools</li>
+        </ul>
+        <div class="course-footer">
+          <div class="course-price-display"><span class="amount" style="color:#8B4CC9">₦450,000</span><div class="duration">6-month programme</div></div>
+          <a href="https://wa.me/2348142653495?text=Hi%2C%20I%20want%20to%20enroll%20in%20CRM%20and%20Automation" class="course-enroll" style="background:rgba(139,76,201,0.15);color:#8B4CC9;" target="_blank">💬 Enroll</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video -->
+    <div class="course-card">
+      <span class="course-card-top" style="background:linear-gradient(90deg,#C94C7E,#E86A9E)"></span>
+      <div class="course-card-body">
+        <span class="course-tag" style="background:rgba(201,76,126,0.15);color:#C94C7E;">Creative · Flexible</span>
+        <h3>Video Creation &amp; Production</h3>
+        <p>Create compelling video content for brands, social media, YouTube, and corporate communications that converts and engages.</p>
+        <ul class="course-features">
+          <li>Pre-Production &amp; Scriptwriting</li><li>Camera Operation &amp; Lighting</li><li>Adobe Premiere Pro</li><li>After Effects &amp; Motion Graphics</li><li>YouTube &amp; Reels Strategy</li><li>Brand Video Production</li><li>Audio Engineering &amp; Sound Design</li>
+        </ul>
+        <div class="course-footer">
+          <div class="course-price-display"><span class="amount" style="color:#C94C7E">₦300,000</span><div class="duration">Flexible duration</div></div>
+          <a href="https://wa.me/2348142653495?text=Hi%2C%20I%20want%20to%20enroll%20in%20Video%20Creation%20and%20Production" class="course-enroll" style="background:rgba(201,76,126,0.15);color:#C94C7E;" target="_blank">💬 Enroll</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content Management -->
+    <div class="course-card">
+      <span class="course-card-top" style="background:linear-gradient(90deg,#C97A4C,#E89A6A)"></span>
+      <div class="course-card-body">
+        <span class="course-tag" style="background:rgba(201,122,76,0.15);color:#C97A4C;">Full Stack · Flexible</span>
+        <h3>Content Management Full Stack</h3>
+        <p>Build and manage content ecosystems that attract audiences, drive SEO, and support long-term brand authority.</p>
+        <ul class="course-features">
+          <li>WordPress Full Stack Development</li><li>Content Strategy &amp; Planning</li><li>Blog, Podcast &amp; Newsletter Systems</li><li>SEO Content Optimisation</li><li>Social Media Content Calendars</li><li>AI Content Tools</li><li>Analytics &amp; Performance Tracking</li>
+        </ul>
+        <div class="course-footer">
+          <div class="course-price-display"><span class="amount" style="color:#C97A4C">₦300,000</span><div class="duration">Flexible duration</div></div>
+          <a href="https://wa.me/2348142653495?text=Hi%2C%20I%20want%20to%20enroll%20in%20Content%20Management" class="course-enroll" style="background:rgba(201,122,76,0.15);color:#C97A4C;" target="_blank">💬 Enroll</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Java -->
+    <div class="course-card">
+      <span class="course-card-top" style="background:linear-gradient(90deg,#2ECC71,#58D68D)"></span>
+      <div class="course-card-body">
+        <span class="course-tag" style="background:rgba(46,204,113,0.15);color:#2ECC71;">Programming · 3 Months</span>
+        <h3>Java Programming</h3>
+        <p>Master Java from fundamentals to object-oriented design — the language powering enterprise systems, Android apps, and backend services worldwide.</p>
+        <ul class="course-features">
+          <li>Java Syntax &amp; Core Concepts</li><li>Object-Oriented Programming (OOP)</li><li>Data Structures &amp; Algorithms</li><li>Exception Handling &amp; Debugging</li><li>File I/O &amp; Collections Framework</li><li>Introduction to Spring Framework</li><li>Build a Real Java Application</li>
+        </ul>
+        <div class="course-footer">
+          <div class="course-price-display"><span class="amount" style="color:#2ECC71">₦300,000</span><div class="duration">3-month programme</div></div>
+          <a href="https://wa.me/2348142653495?text=Hi%2C%20I%20want%20to%20enroll%20in%20Java%20Programming" class="course-enroll" style="background:rgba(46,204,113,0.15);color:#2ECC71;" target="_blank">💬 Enroll</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Python -->
+    <div class="course-card">
+      <span class="course-card-top" style="background:linear-gradient(90deg,#3498DB,#5DADE2)"></span>
+      <div class="course-card-body">
+        <span class="course-tag" style="background:rgba(52,152,219,0.15);color:#3498DB;">Programming · 3 Months</span>
+        <h3>Python Programming</h3>
+        <p>Learn the world's most versatile language — from scripting and automation to data analysis, AI tools, and web backends.</p>
+        <ul class="course-features">
+          <li>Python Basics &amp; Syntax</li><li>Functions, Loops &amp; Logic</li><li>Data Structures (Lists, Dicts, Sets)</li><li>File Handling &amp; Automation Scripts</li><li>Web Scraping with BeautifulSoup</li><li>Intro to Data Analysis with Pandas</li><li>Build a Python Project Portfolio</li>
+        </ul>
+        <div class="course-footer">
+          <div class="course-price-display"><span class="amount" style="color:#3498DB">₦220,000</span><div class="duration">3-month programme</div></div>
+          <a href="https://wa.me/2348142653495?text=Hi%2C%20I%20want%20to%20enroll%20in%20Python%20Programming" class="course-enroll" style="background:rgba(52,152,219,0.15);color:#3498DB;" target="_blank">💬 Enroll</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- HTML & CSS -->
+    <div class="course-card">
+      <span class="course-card-top" style="background:linear-gradient(90deg,#E67E22,#F0A04B)"></span>
+      <div class="course-card-body">
+        <span class="course-tag" style="background:rgba(230,126,34,0.15);color:#E67E22;">Beginner · 6 Weeks</span>
+        <h3>HTML &amp; CSS</h3>
+        <p>The perfect starting point for anyone entering tech. Build real, beautiful websites from scratch — no experience needed.</p>
+        <ul class="course-features">
+          <li>HTML5 Document Structure</li><li>CSS Styling, Colors &amp; Typography</li><li>Flexbox &amp; CSS Grid Layouts</li><li>Responsive Design &amp; Media Queries</li><li>Forms, Tables &amp; Semantic HTML</li><li>CSS Animations &amp; Transitions</li><li>Publish Your First Website</li>
+        </ul>
+        <div class="course-footer">
+          <div class="course-price-display"><span class="amount" style="color:#E67E22">₦180,000</span><div class="duration">6-week programme</div></div>
+          <a href="https://wa.me/2348142653495?text=Hi%2C%20I%20want%20to%20enroll%20in%20HTML%20and%20CSS" class="course-enroll" style="background:rgba(230,126,34,0.15);color:#E67E22;" target="_blank">💬 Enroll</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="course-card">
+      <span class="course-card-top" style="background:linear-gradient(90deg,#F1C40F,#F4D03F)"></span>
+      <div class="course-card-body">
+        <span class="course-tag" style="background:rgba(241,196,15,0.15);color:#D4AC0D;">Intermediate · 2 Months</span>
+        <h3>JavaScript</h3>
+        <p>Make the web interactive. JavaScript is the core language of every modern website, app, and browser experience — master it here.</p>
+        <ul class="course-features">
+          <li>JavaScript ES6+ Fundamentals</li><li>DOM Manipulation &amp; Events</li><li>Functions, Scope &amp; Closures</li><li>Fetch API &amp; Working with JSON</li><li>Async/Await &amp; Promises</li><li>Introduction to React.js</li><li>Build 3 Interactive Web Projects</li>
+        </ul>
+        <div class="course-footer">
+          <div class="course-price-display"><span class="amount" style="color:#D4AC0D">₦200,000</span><div class="duration">2-month programme</div></div>
+          <a href="https://wa.me/2348142653495?text=Hi%2C%20I%20want%20to%20enroll%20in%20JavaScript" class="course-enroll" style="background:rgba(241,196,15,0.15);color:#D4AC0D;" target="_blank">💬 Enroll</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="services">
+  <div class="services-intro">
+    <div class="section-eyebrow">What You'll Master</div>
+    <h2 class="section-title">Six Pillars of <br>Modern Tech Careers</h2>
+    <p class="section-sub">Every programme covers end-to-end skills so you graduate as a complete professional — not just a beginner.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-col" style="border-color:rgba(201,168,76,0.2)">
+      <div class="service-col-header" style="background:linear-gradient(135deg,rgba(201,168,76,0.08),transparent)"><span class="service-icon">📈</span><span class="service-badge" style="background:rgba(201,168,76,0.15);color:#C9A84C;">Full Stack</span><h3>Digital Marketing</h3></div>
+      <div class="service-col-body"><ul><li>SEO Full Stack Mastery</li><li>Google &amp; Meta Ads</li><li>Email Marketing Systems</li><li>Social Media Strategy</li><li>Brand Identity &amp; Voice</li><li>Conversion Optimization</li><li>Marketing Analytics</li></ul></div>
+      <div class="service-price"><span class="price-amt" style="color:#C9A84C">₦180,000</span><span class="price-period">3-month full programme</span></div>
+      <a href="https://wa.me/2348142653495?text=Hi%2C%20I%20want%20to%20enroll%20in%20Digital%20Marketing" class="service-enroll-btn" style="background:rgba(201,168,76,0.15);color:#C9A84C;" target="_blank">💬 Enroll via WhatsApp</a>
+    </div>
+    <div class="service-col" style="border-color:rgba(76,126,201,0.2)">
+      <div class="service-col-header" style="background:linear-gradient(135deg,rgba(76,126,201,0.08),transparent)"><span class="service-icon">💻</span><span class="service-badge" style="background:rgba(76,126,201,0.15);color:#4C7EC9;">Full Stack</span><h3>Web Development</h3></div>
+      <div class="service-col-body"><ul><li>HTML, CSS &amp; JavaScript</li><li>React Full Stack Apps</li><li>Node.js &amp; APIs</li><li>Database Architecture</li><li>Cloud Deployment</li><li>UI/UX Best Practices</li><li>Portfolio Development</li></ul></div>
+      <div class="service-price"><span class="price-amt" style="color:#4C7EC9">₦200,000</span><span class="price-period">6-month full programme</span></div>
+      <a href="https://wa.me/2348142653495?text=Hi%2C%20I%20want%20to%20enroll%20in%20Web%20Development" class="service-enroll-btn" style="background:rgba(76,126,201,0.15);color:#4C7EC9;" target="_blank">💬 Enroll via WhatsApp</a>
+    </div>
+    <div class="service-col" style="border-color:rgba(76,201,176,0.2)">
+      <div class="service-col-header" style="background:linear-gradient(135deg,rgba(76,201,176,0.08),transparent)"><span class="service-icon">📋</span><span class="service-badge" style="background:rgba(76,201,176,0.15);color:#4CC9B0;">Full Stack</span><h3>Project Management</h3></div>
+      <div class="service-col-body"><ul><li>Agile &amp; Scrum</li><li>PMP Certification Prep</li><li>Risk &amp; Budget Control</li><li>Team Leadership</li><li>Stakeholder Management</li><li>PM Tools Mastery</li><li>Real Project Simulations</li></ul></div>
+      <div class="service-price"><span class="price-amt" style="color:#4CC9B0">₦200,000</span><span class="price-period">Full programme</span></div>
+      <a href="https://wa.me/2348142653495?text=Hi%2C%20I%20want%20to%20enroll%20in%20Project%20Management" class="service-enroll-btn" style="background:rgba(76,201,176,0.15);color:#4CC9B0;" target="_blank">💬 Enroll via WhatsApp</a>
+    </div>
+    <div class="service-col" style="border-color:rgba(139,76,201,0.2)">
+      <div class="service-col-header" style="background:linear-gradient(135deg,rgba(139,76,201,0.08),transparent)"><span class="service-icon">⚙️</span><span class="service-badge" style="background:rgba(139,76,201,0.15);color:#8B4CC9;">Advanced</span><h3>CRM &amp; Automation</h3></div>
+      <div class="service-col-body"><ul><li>HubSpot Full Stack</li><li>Salesforce CRM</li><li>Zapier &amp; Make Workflows</li><li>Lead Scoring Systems</li><li>Email Automation</li><li>Customer Journey Design</li><li>AI-Powered CRM Tools</li></ul></div>
+      <div class="service-price"><span class="price-amt" style="color:#8B4CC9">₦450,000</span><span class="price-period">6-month programme</span></div>
+      <a href="https://wa.me/2348142653495?text=Hi%2C%20I%20want%20to%20enroll%20in%20CRM%20and%20Automation" class="service-enroll-btn" style="background:rgba(139,76,201,0.15);color:#8B4CC9;" target="_blank">💬 Enroll via WhatsApp</a>
+    </div>
+    <div class="service-col" style="border-color:rgba(201,76,126,0.2)">
+      <div class="service-col-header" style="background:linear-gradient(135deg,rgba(201,76,126,0.08),transparent)"><span class="service-icon">🎬</span><span class="service-badge" style="background:rgba(201,76,126,0.15);color:#C94C7E;">Creative</span><h3>Video Creation</h3></div>
+      <div class="service-col-body"><ul><li>Script &amp; Storyboarding</li><li>Camera &amp; Lighting Setup</li><li>Premiere Pro Full Stack</li><li>After Effects &amp; Motion</li><li>YouTube Channel Strategy</li><li>Reels &amp; Shorts Production</li><li>Corporate Video Output</li></ul></div>
+      <div class="service-price"><span class="price-amt" style="color:#C94C7E">₦300,000</span><span class="price-period">Full programme</span></div>
+      <a href="https://wa.me/2348142653495?text=Hi%2C%20I%20want%20to%20enroll%20in%20Video%20Creation" class="service-enroll-btn" style="background:rgba(201,76,126,0.15);color:#C94C7E;" target="_blank">💬 Enroll via WhatsApp</a>
+    </div>
+    <div class="service-col" style="border-color:rgba(201,122,76,0.2)">
+      <div class="service-col-header" style="background:linear-gradient(135deg,rgba(201,122,76,0.08),transparent)"><span class="service-icon">📝</span><span class="service-badge" style="background:rgba(201,122,76,0.15);color:#C97A4C;">Full Stack</span><h3>Content Management</h3></div>
+      <div class="service-col-body"><ul><li>WordPress Full Stack</li><li>Editorial Planning</li><li>SEO Content Writing</li><li>Blog &amp; Podcast Systems</li><li>AI Content Tools</li><li>Analytics &amp; Reporting</li><li>Social Media Calendars</li></ul></div>
+      <div class="service-price"><span class="price-amt" style="color:#C97A4C">₦300,000</span><span class="price-period">Full programme</span></div>
+      <a href="https://wa.me/2348142653495?text=Hi%2C%20I%20want%20to%20enroll%20in%20Content%20Management" class="service-enroll-btn" style="background:rgba(201,122,76,0.15);color:#C97A4C;" target="_blank">💬 Enroll via WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="why-content">
+    <div class="section-eyebrow">Why BizySkills</div>
+    <h2 class="section-title">Training Built for Real-World Results</h2>
+    <p class="section-sub">We don't teach theory. We build careers — through live instruction, real client projects, and a network that opens doors.</p>
+    <div class="why-points">
+      <div class="why-point"><div class="why-point-icon">🎯</div><div class="why-point-text"><h4>Industry-Focused Curriculum</h4><p>Every module is designed with employers in mind. Learn what's actually used in top agencies, startups, and enterprises today.</p></div></div>
+      <div class="why-point"><div class="why-point-icon">👨‍🏫</div><div class="why-point-text"><h4>Expert Mentors, Not Just Tutors</h4><p>All instructors are active practitioners with 5+ years of industry experience. Real insights, not recycled slides.</p></div></div>
+      <div class="why-point"><div class="why-point-icon">💼</div><div class="why-point-text"><h4>Career Support &amp; Placement</h4><p>CV reviews, interview prep, portfolio building, and employer introductions — we don't stop at the certificate.</p></div></div>
+      <div class="why-point"><div class="why-point-icon">🔄</div><div class="why-point-text"><h4>Flexible Learning Options</h4><p>Weekend and evening classes available. Learn without pausing your current job or commitments.</p></div></div>
+    </div>
+  </div>
+  <div class="why-visual">
+    <div class="testimonial-stack">
+      <div class="t-card"><div class="stars">★★★★★</div><p class="t-quote">"BizySkills' Web Development programme completely transformed my career. Within 3 months of graduating, I landed a full-stack developer role paying 3× my previous salary."</p><div class="t-author"><div class="t-avatar">AO</div><div><div class="t-name">Adaeze Okonkwo</div><div class="t-role">Full Stack Developer · Class of 2024</div></div></div></div>
+      <div class="t-card"><div class="stars">★★★★★</div><p class="t-quote">"The Digital Marketing Full Stack course gave me everything I needed to launch my own agency. I paid back my course fees within 6 weeks of graduating."</p><div class="t-author"><div class="t-avatar">KE</div><div><div class="t-name">Kelechi Emeka</div><div class="t-role">Marketing Agency Founder · Class of 2023</div></div></div></div>
+      <div class="t-card"><div class="stars">★★★★★</div><p class="t-quote">"CRM &amp; Automation opened doors I didn't even know existed. I'm now automating entire sales pipelines for enterprise clients — skills I never thought I'd have."</p><div class="t-author"><div class="t-avatar">TJ</div><div><div class="t-name">Tunde James</div><div class="t-role">CRM Consultant · Class of 2024</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="process-header">
+    <div class="section-eyebrow">How It Works</div>
+    <h2 class="section-title">Your Path from <br>Beginner to Career-Ready</h2>
+  </div>
+  <div class="process-steps">
+    <div class="process-step"><div class="step-num">01</div><h4>Choose Your Programme</h4><p>Browse 10 programmes and pick the one aligned to your career goals.</p></div>
+    <div class="process-step"><div class="step-num">02</div><h4>Apply &amp; Enroll</h4><p>Message us on WhatsApp to enroll instantly. Flexible payment plans available.</p></div>
+    <div class="process-step"><div class="step-num">03</div><h4>Learn &amp; Build</h4><p>Attend live classes, work on real projects, and get weekly feedback from expert mentors.</p></div>
+    <div class="process-step"><div class="step-num">04</div><h4>Get Certified</h4><p>Complete your programme and earn an industry-recognised BizySkills certificate.</p></div>
+    <div class="process-step"><div class="step-num">05</div><h4>Launch Your Career</h4><p>Access our career support team, alumni network, and employer introductions.</p></div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="faq-grid">
+    <div class="faq-header">
+      <div class="section-eyebrow">FAQ</div>
+      <h2 class="section-title">Common Questions</h2>
+      <p class="section-sub">Everything you need to know before enrolling. Still have questions? <a href="https://wa.me/2348142653495" style="color:var(--gold);" target="_blank">Chat with us on WhatsApp</a>.</p>
+    </div>
+    <div class="faq-items">
+      <div class="faq-item open"><button class="faq-q" onclick="toggleFAQ(this)">Do I need prior experience to enroll?<span class="faq-arrow">+</span></button><div class="faq-a">No prior experience is required for most programmes. HTML &amp; CSS, Python, and Digital Marketing start from the very basics. Java and JavaScript require some familiarity with HTML &amp; CSS first.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">Are classes online or in-person?<span class="faq-arrow">+</span></button><div class="faq-a">We offer both online (live virtual) and in-person options depending on the programme and cohort. Recordings are available for all live sessions so you never miss a lesson.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">Can I pay in installments?<span class="faq-arrow">+</span></button><div class="faq-a">Yes. Flexible payment plans are available for all programmes. You can split payments into 2 or 3 installments. Message us on WhatsApp to discuss your preferred plan.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">What certificate will I receive?<span class="faq-arrow">+</span></button><div class="faq-a">Upon successful completion, you will receive a BizySkills certificate of completion. Certain programmes also prepare you for external certifications such as Google, HubSpot, and PMP.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">How long are the programmes?<span class="faq-arrow">+</span></button><div class="faq-a">Programmes range from 6 weeks (HTML &amp; CSS) to 6 months (Web Development, CRM &amp; Automation). Java and Python are 3 months; JavaScript is 2 months. Other programmes have flexible scheduling.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">Is there career support after graduation?<span class="faq-arrow">+</span></button><div class="faq-a">Absolutely. Every graduate gets access to our Career Support programme which includes CV reviews, LinkedIn profile optimisation, mock interviews, portfolio reviews, and employer introductions.</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="cta-banner">
+  <h2 class="section-title">Ready to Build Your <span style="color:var(--gold)">Tech Career?</span></h2>
+  <p class="section-sub">Join the next BizySkills cohort and gain the skills that employers are hiring for right now. Flexible payments available. Enroll instantly via WhatsApp.</p>
+  <div class="cta-btns">
+    <a href="https://wa.me/2348142653495?text=Hi%20BizySkills%2C%20I%20want%20to%20enroll!" class="btn-wa" target="_blank">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Chat &amp; Enroll on WhatsApp
+    </a>
+    <a href="#courses" class="btn-secondary">Browse All Courses</a>
+  </div>
+  <p class="cohort-note">🗓 <strong>Next cohort starts soon.</strong> Limited seats available — secure yours today.</p>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="footer-logo-wrap">
+        <div class="footer-logo-icon">B</div>
+        <div class="logo-wordmark"><span class="biz">Bizy</span><span class="skills">Skills</span></div>
+      </a>
+      <p>BizySkills is Lagos's premier training hub for Digital Marketing, Web Development, Java, Python, JavaScript, Project Management, CRM, Video Production, and Content Management.</p>
+      <div class="footer-socials">
+        <a class="social-btn" href="#">𝕏</a>
+        <a class="social-btn" href="#">in</a>
+        <a class="social-btn" href="#">f</a>
+        <a class="social-btn" href="#">▶</a>
+        <a class="social-btn" href="https://wa.me/2348142653495" target="_blank">💬</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Programmes</h4>
+      <ul>
+        <li><a href="#courses">Digital Marketing</a></li>
+        <li><a href="#courses">Web Development</a></li>
+        <li><a href="#courses">Java Programming</a></li>
+        <li><a href="#courses">Python Programming</a></li>
+        <li><a href="#courses">HTML &amp; CSS</a></li>
+        <li><a href="#courses">JavaScript</a></li>
+        <li><a href="#courses">Project Management</a></li>
+        <li><a href="#courses">CRM &amp; Automation</a></li>
+        <li><a href="#courses">Video Creation</a></li>
+        <li><a href="#courses">Content Management</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About BizySkills</a></li><li><a href="#">Our Instructors</a></li><li><a href="#">Success Stories</a></li><li><a href="#">Blog &amp; Resources</a></li><li><a href="#">Careers</a></li><li><a href="https://wa.me/2348142653495" target="_blank">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#faq">FAQ</a></li><li><a href="#">Payment Plans</a></li><li><a href="#">Admissions Process</a></li><li><a href="#">Terms &amp; Conditions</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Refund Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 BizySkills. All rights reserved.</span>
+    <span>Built for ambitious professionals in Lagos, Nigeria 🇳🇬</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
